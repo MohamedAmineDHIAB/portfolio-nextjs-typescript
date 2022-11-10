@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components";
+import styled, { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
     * {
@@ -10,4 +10,12 @@ export const GlobalStyle = createGlobalStyle`
         --orange:#F2A172;
         --dark-pink:#BF95A9;
     }
+`;
+
+export const Body = styled.div`
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
 `;
