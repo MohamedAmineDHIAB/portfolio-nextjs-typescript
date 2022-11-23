@@ -10,6 +10,7 @@ import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
+import { PrimaryButton } from "../buttons";
 const Hero = () => {
     const [showPing, setShowPing] = useState(false);
     const [text, count] = useTypewriter({
@@ -38,6 +39,7 @@ const Hero = () => {
                 <b>
                     I'm a {text} <Cursor cursorColor="inherit" />
                 </b>
+                <PrimaryButton>Let's chat</PrimaryButton>
             </HeroLeft>
             <HeroRight>
                 {showPing && <RightBorder className="animate-ping" />}

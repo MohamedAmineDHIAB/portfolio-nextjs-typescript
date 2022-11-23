@@ -11,7 +11,7 @@ export const HeaderWrapper = styled.div`
     justify-content: space-between;
     align-items: center;
     padding: 0 15%;
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
 `;
 
 export const LogoWrapper = styled.div`
@@ -19,7 +19,23 @@ export const LogoWrapper = styled.div`
 `;
 
 export const NavBar = styled.div`
-    
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
 `;
 
-export const NavBarItem = styled.div``;
+export const NavBarItem = styled.div`
+    display: flex;
+    height: 1.1rem;
+    align-items: center;
+    > * {
+        font-size: 0.5rem;
+        font-weight: 300;
+    }
+    margin-right: 1rem;
+    cursor: pointer;
+    &:last-child {
+        margin-right: 0;
+    }
+`;

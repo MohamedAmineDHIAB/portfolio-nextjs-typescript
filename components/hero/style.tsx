@@ -24,8 +24,8 @@ export const HeroRight = styled.div`
 `;
 
 export const RightBorder = styled.div`
-    width: 3rem;
-    height: 3rem;
+    width: 3.5rem;
+    height: 3.5rem;
     border-radius: 100%;
     margin: 1.5rem;
     position: absolute;
@@ -43,4 +43,7 @@ export const HeroImgWrapper = styled.div`
 
 export const HeroLeft = styled.div`
     max-width: 18rem;
+    > * {
+        margin-top: 1rem;
+    }
 `;
