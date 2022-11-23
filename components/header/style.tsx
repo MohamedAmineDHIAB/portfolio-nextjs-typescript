@@ -12,6 +12,7 @@ export const HeaderWrapper = styled.div`
     align-items: center;
     padding: 0 15%;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+    z-index: 999;
 `;
 
 export const LogoWrapper = styled.div`
@@ -29,13 +30,41 @@ export const NavBarItem = styled.div`
     display: flex;
     height: 1.1rem;
     align-items: center;
+    position: relative;
     > * {
         font-size: 0.5rem;
         font-weight: 300;
     }
     margin-right: 1rem;
     cursor: pointer;
+    &:after {
+        width: 0;
+        background: black;
+        height: 1px;
+        content: "";
+        position: absolute;
+        bottom: 0;
+        transition: all 0.2s ease-in-out;
+    }
+    &:hover {
+        &:after {
+            width: 100%;
+            background: var(--blue);
+            height: 1px;
+            content: "";
+            position: absolute;
+            bottom: 0;
+        }
+        color: var(--blue);
+    }
     &:last-child {
         margin-right: 0;
+        &:after {
+            all: unset;
+        }
+        &:hover {
+            all: unset;
+        }
     }
+    transition: all 0.2s ease-in-out;
 `;

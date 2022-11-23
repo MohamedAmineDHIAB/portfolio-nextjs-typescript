@@ -1,6 +1,9 @@
 import Head from "next/head";
+import Education from "../components/education";
+import Experience from "../components/experience";
 import Header from "../components/header";
 import Hero from "../components/hero";
+import Projects from "../components/projects";
 import { GlobalStyle, Body } from "../styles/global";
 
 export default function Home() {
@@ -17,6 +20,9 @@ export default function Home() {
                 <GlobalStyle />
                 <Header />
                 <Hero />
+                <Projects />
+                <Education />
+                <Experience />
             </Body>
         </>
     );
