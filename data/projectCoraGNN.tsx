@@ -1,6 +1,6 @@
 export const ProjectCoraGNN = [
     {
-        img: "https://www.researchgate.net/publication/364524615/figure/fig1/AS:11431281091194589@1666333801087/Force-directed-visualisation-of-automatically-extracted-character-network-for-Tolkiens_Q320.jpg",
+        img: "https://cdn.paperpile.com/guides/img/research-paper-types-illustr-400x400.png",
         title: "Graph Example",
         cols: 2,
         rows: 2,
@@ -11,7 +11,7 @@ export const ProjectCoraGNN = [
         cols: 2,
     },
     {
-        img: "https://user-images.githubusercontent.com/85687148/129501690-050e4c6b-cab3-46a1-b900-27fa5dedb0ed.png",
+        img: "https://miro.medium.com/max/427/1*HOY7FRIAMRvt8hWK6qQsPw.png",
         title: "Cora Classification",
         cols: 2,
     },

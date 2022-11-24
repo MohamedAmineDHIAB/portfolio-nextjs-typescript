@@ -12,8 +12,6 @@ export const HeroWrapper = styled.div`
 `;
 
 export const HeroRight = styled.div`
-    width: 6rem;
-    height: 6rem;
     border-radius: 100%;
     position: relative;
     display: flex;
@@ -24,8 +22,8 @@ export const HeroRight = styled.div`
 `;
 
 export const RightBorder = styled.div`
-    width: 3.5rem;
-    height: 3.5rem;
+    width: max(3.5rem, 10vw);
+    height: max(3.5rem, 10vw);
     border-radius: 100%;
     margin: 1.5rem;
     position: absolute;
@@ -33,8 +31,8 @@ export const RightBorder = styled.div`
 `;
 
 export const HeroImgWrapper = styled.div`
-    width: 5rem;
-    height: 5rem;
+    width: max(5rem, 15vw);
+    height: max(5rem, 15vw);
     border-radius: inherit;
     position: relative;
     overflow: hidden;
