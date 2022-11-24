@@ -42,7 +42,7 @@ export const HeroImgWrapper = styled.div`
 `;
 
 export const HeroLeft = styled.div`
-    max-width: 18rem;
+    max-width: 45vw;
     > * {
         margin-top: 1rem;
     }

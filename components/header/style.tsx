@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const HeaderWrapper = styled.div`
-    height: 1.8rem;
+    height: max(1.8rem, 4vw);
     width: 100vw;
     background-color: white;
     position: fixed;
@@ -32,7 +32,7 @@ export const NavBarItem = styled.div`
     align-items: center;
     position: relative;
     > * {
-        font-size: 0.5rem;
+        font-size: max(0.5rem, 1.1vw);
         font-weight: 300;
     }
     margin-right: 1rem;

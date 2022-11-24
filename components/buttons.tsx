@@ -4,7 +4,6 @@ export const PrimaryButton = styled.div`
     display: flex;
     text-align: center;
     align-items: center;
-    height: 1.1rem;
     background: linear-gradient(
         90deg,
         rgba(0, 0, 0, 0) 0%,
@@ -12,10 +11,10 @@ export const PrimaryButton = styled.div`
         rgba(167, 242, 53, 1) 200%
     );
 
-    padding: 0.5rem;
     border-radius: 0.3rem;
     box-sizing: border-box;
-    font-size: 0.45rem;
+    padding: 0.2rem 0.5rem;
+    font-size: max(0.5rem, 1.1vw);
     font-weight: 400;
     width: fit-content;
     cursor: pointer;

@@ -18,19 +18,19 @@ export const GlobalStyle = createGlobalStyle`
     h3{
         font-family: 'Alfa Slab One';
         font-weight:light;
-        font-size:1.2rem;
+        font-size:max(1.2rem,4vw);
         color : var(--blue);
     }
     b{
         font-family: 'Caveat Brush';
         font-weight : 900;
-        font-size:1.2rem;
+        font-size:max(1.2rem,4vw);
         color : var(--dark-blue);
     }
     span{
         font-family: 'Work Sans';
         font-weight : 500;
-        font-size:1rem;
+        font-size:max(0.5rem, 1.1vw);
     }
 
 `;
