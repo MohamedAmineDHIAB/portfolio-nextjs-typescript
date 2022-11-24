@@ -7,12 +7,15 @@ export const Wrapper = styled.div`
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background: url("./projects_1.webp");
+    box-sizing: border-box;
+    padding: 2rem 0;
 `;
 
 export const Container = styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 1rem;
+    grid-gap: min(5vw, 1rem) min(5vw, 1.5rem);
     margin-top: 1rem;
     margin-bottom: 1rem;
 `;

@@ -20,7 +20,10 @@ export const PrimaryButton = styled.div`
     width: fit-content;
     cursor: pointer;
     &:hover {
-        transform: scale(1.1);
+        background-position: right;
+        transform: scale(1.05);
     }
-    transition: all 0.2s ease-in-out;
+    background-size: 200%;
+    background-position: center;
+    transition: all 0.25s ease-in-out;
 `;

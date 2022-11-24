@@ -1,5 +1,7 @@
 import styled from "styled-components";
 import { IoLogoGithub } from "react-icons/io";
+import ImageList from "@mui/material/ImageList";
+import ImageListItem from "@mui/material/ImageListItem";
 const Wrapper = styled.div`
     width: 8rem;
     height: 10rem;
@@ -10,14 +12,24 @@ const Wrapper = styled.div`
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    border: 1px solid #333333;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(5px);
+`;
+
+const Background = styled.div`
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 `;
 const Title = styled.div`
     position: relative;
     box-sizing: border-box;
-    padding: 0.1rem;
-    line-height: 0.5rem;
+    padding: 0.4rem;
+    line-height: 0.8rem;
     text-align: center;
 `;
 
@@ -38,27 +50,83 @@ const Button = styled.a`
     > * {
         margin-left: 0.2rem;
     }
+    &:hover {
+        background-color: var(--blue);
+        color: white;
+    }
+    transition: all 0.15s cubic-bezier(0.48, 0.04, 0.95, 0.63);
 `;
 
 const ImgWrapper = styled.div`
-    width: 100%;
+    width: 90%;
     height: 5rem;
+    position: relative;
+    margin-top: 6%;
 `;
 
 type ProjectProps = {
     title?: string;
     link?: string;
+    itemData: {
+        img: string;
+        title: string;
+        cols?: number;
+        rows?: number;
+    }[];
 };
-const Project = ({ title, link }: ProjectProps) => {
+
+function srcset(image: string, size: number, rows = 1, cols = 1) {
+    return {
+        src: `${image}?w=${size * cols}&h=${size * rows}`,
+        srcSet: `${image}?w=${size * cols}&h=${size * rows}`,
+    };
+}
+const Project = ({ title, link, itemData }: ProjectProps) => {
     return (
         <Wrapper>
+            <Background />
             {/* <b style={{ fontSize: "1rem" }}>{title}</b>
             <span>{description}</span> */}
-            <ImgWrapper></ImgWrapper>
+            <ImgWrapper>
+                <ImageList
+                    cols={4}
+                    rowHeight={80}
+                    style={{
+                        overflow: "visible",
+                        width: "100%",
+                        height: "100%",
+                    }}
+                >
+                    {itemData.map((item, index) => (
+                        <ImageListItem
+                            key={index}
+                            cols={item.cols || 1}
+                            rows={item.rows || 1}
+                        >
+                            <img
+                                {...srcset(item.img, 20, item.rows, item.cols)}
+                                alt={item.title}
+                                loading="lazy"
+                                style={{
+                                    objectFit: "cover",
+                                    border: "1px solid rgba(0, 0, 0, 0.5)",
+                                    borderRadius: "10px",
+                                }}
+                            />
+                        </ImageListItem>
+                    ))}
+                </ImageList>
+            </ImgWrapper>
             <Title>
-                <span style={{ fontSize: "0.6rem", fontWeight: "400" }}>
+                <h3
+                    style={{
+                        fontSize: "0.5rem",
+                        color: "black",
+                        letterSpacing: "0.02rem",
+                    }}
+                >
                     {title}
-                </span>
+                </h3>
             </Title>
             <Button href={link}>
                 Link to GitHub

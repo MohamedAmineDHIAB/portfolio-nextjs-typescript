@@ -13,6 +13,7 @@ export const GlobalStyle = createGlobalStyle`
         --orange:#F2A172;
         --dark-pink:#BF95A9;
         --purple:#CDBEFA;
+        user-select: none;
     }
     h3{
         font-family: 'Alfa Slab One';
