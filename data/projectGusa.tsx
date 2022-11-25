@@ -6,12 +6,12 @@ export const ProjectGusaData = [
         rows: 2,
     },
     {
-        img: "./gusa.png",
+        img: "./projects/gusa.png",
         title: "Guided Soft Attention Model",
         cols: 2,
     },
     {
-        img: "./gland.jpeg",
+        img: "./projects/gland.jpeg",
         title: "Colon gland image",
         cols: 2,
     },

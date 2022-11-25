@@ -1,14 +1,25 @@
 import styled from "styled-components";
 
+export const Waves = styled.img`
+    transform: scaleY(-1);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+`;
+
 export const HeroWrapper = styled.div`
     width: 100%;
     height: 100vh;
     display: flex;
     flex-direction: row;
+    position: relative;
     align-items: center;
     justify-content: space-between;
     padding: 15%;
     box-sizing: border-box;
+    background: url("./hero/freepik_flatart.svg") no-repeat;
+    background-size: cover;
 `;
 
 export const HeroRight = styled.div`

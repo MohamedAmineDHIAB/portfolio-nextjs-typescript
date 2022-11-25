@@ -7,7 +7,9 @@ export const Wrapper = styled.div`
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: url("./projects_1.webp");
+    background: url("./projects/freepik_kjpargeter.webp") no-repeat center
+        center;
+    background-size: auto 100%;
     box-sizing: border-box;
     padding: 2rem 0;
 `;

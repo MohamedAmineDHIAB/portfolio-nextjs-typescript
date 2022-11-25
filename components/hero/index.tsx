@@ -4,8 +4,9 @@ import {
     HeroRight,
     RightBorder,
     HeroImgWrapper,
+    Waves,
 } from "./style";
-import MohamedPic from "../../public/mohamed_pic.jpg";
+import MohamedPic from "../../public/hero/mohamed_pic.jpg";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import Image from "next/image";
@@ -34,6 +35,7 @@ const Hero = () => {
     }, [setShowPing]);
     return (
         <HeroWrapper>
+            <Waves src="./hero/waves.svg" />
             <HeroLeft>
                 <h3>Hi, I'm Mohamed 👋</h3>
                 <b>
