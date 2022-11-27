@@ -16,7 +16,7 @@ const Header = () => {
                     <span>Education</span>
                 </NavBarItem>
                 <NavBarItem>
-                    <span>Experience</span>
+                    <span>Work</span>
                 </NavBarItem>
                 <NavBarItem>
                     <PrimaryButton>Let's chat</PrimaryButton>

@@ -11,7 +11,7 @@ export const Wrapper = styled.div`
         center;
     background-size: auto 100%;
     box-sizing: border-box;
-    padding: 2rem 0;
+    padding: 0 0 2rem 0;
 `;
 
 export const Container = styled.div`

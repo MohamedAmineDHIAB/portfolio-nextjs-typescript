@@ -18,7 +18,7 @@ export const HeroWrapper = styled.div`
     justify-content: space-between;
     padding: 15%;
     box-sizing: border-box;
-    background: url("./hero/freepik_flatart.svg") no-repeat;
+    background: url("./hero/freepik_freepik1.svg") no-repeat;
     background-size: cover;
 `;
 

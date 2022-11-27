@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Education from "../components/education";
-import Experience from "../components/experience";
+import Work from "../components/work";
 import Header from "../components/header";
 import Hero from "../components/hero";
 import Projects from "../components/projects";
@@ -22,7 +22,7 @@ export default function Home() {
                 <Hero />
                 <Projects />
                 <Education />
-                <Experience />
+                <Work />
             </Body>
         </>
     );

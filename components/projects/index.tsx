@@ -1,9 +1,9 @@
 import { Container, Wrapper } from "./style";
 import Project from "./project";
-import { ProjectGusaData } from "../../data/projectGusa";
-import { ProjectPortfolio } from "../../data/projectPortfolio";
-import { ProjectImageText } from "../../data/projectImageText";
-import { ProjectCoraGNN } from "../../data/projectCoraGNN";
+import { ProjectGusaData } from "../../data/projectsData/projectGusa";
+import { ProjectPortfolio } from "../../data/projectsData/projectPortfolio";
+import { ProjectImageText } from "../../data/projectsData/projectImageText";
+import { ProjectCoraGNN } from "../../data/projectsData/projectCoraGNN";
 
 const Projects = () => {
     return (

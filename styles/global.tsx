@@ -21,6 +21,11 @@ export const GlobalStyle = createGlobalStyle`
         font-size:max(1.2rem,4vw);
         color : var(--blue);
     }
+    h4{
+        font-size: 0.7rem;
+        color: var(--dark-blue);
+        font-weight: 300;
+    }
     b{
         font-family: 'Caveat Brush';
         font-weight : 900;
@@ -29,10 +34,12 @@ export const GlobalStyle = createGlobalStyle`
     }
     span{
         font-family: 'Work Sans';
-        font-weight : 500;
-        font-size:max(0.5rem, 1.1vw);
+        font-size: max(0.5rem, 1.1vw);
+        font-weight: 300;
     }
-
+    span.soft{
+        opacity:0.5;
+    }
 `;
 
 export const Body = styled.div`

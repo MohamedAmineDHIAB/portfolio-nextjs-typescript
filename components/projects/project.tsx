@@ -1,5 +1,7 @@
 import styled from "styled-components";
 import { IoLogoGithub } from "react-icons/io";
+import { FiExternalLink } from "react-icons/fi";
+
 import ImageList from "@mui/material/ImageList";
 import ImageListItem from "@mui/material/ImageListItem";
 const Wrapper = styled.div`
@@ -17,14 +19,6 @@ const Wrapper = styled.div`
     backdrop-filter: blur(5px);
 `;
 
-const Background = styled.div`
-    z-index: -1;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-`;
 const Title = styled.div`
     position: relative;
     box-sizing: border-box;
@@ -84,7 +78,6 @@ function srcset(image: string, size: number, rows = 1, cols = 1) {
 const Project = ({ title, link, itemData }: ProjectProps) => {
     return (
         <Wrapper>
-            <Background />
             {/* <b style={{ fontSize: "1rem" }}>{title}</b>
             <span>{description}</span> */}
             <ImgWrapper>
@@ -131,6 +124,7 @@ const Project = ({ title, link, itemData }: ProjectProps) => {
             <Button href={link}>
                 Link to GitHub
                 <IoLogoGithub style={{ fontSize: "inherit" }} />
+                <FiExternalLink style={{ fontSize: "inherit" }} />
             </Button>
         </Wrapper>
     );

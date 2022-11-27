@@ -31,10 +31,7 @@ export const NavBarItem = styled.div`
     height: 1.1rem;
     align-items: center;
     position: relative;
-    > * {
-        font-size: max(0.5rem, 1.1vw);
-        font-weight: 300;
-    }
+
     margin-right: 1rem;
     cursor: pointer;
     &:after {
