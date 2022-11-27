@@ -4,11 +4,12 @@ import { ProjectGusaData } from "../../data/projectsData/projectGusa";
 import { ProjectPortfolio } from "../../data/projectsData/projectPortfolio";
 import { ProjectImageText } from "../../data/projectsData/projectImageText";
 import { ProjectCoraGNN } from "../../data/projectsData/projectCoraGNN";
+import Title from "../title";
 
 const Projects = () => {
     return (
         <Wrapper>
-            <h3 style={{ marginBottom: "1.5rem" }}>Projects</h3>
+            <Title title="Projects" />
             <Container>
                 <Project
                     title="Guided Soft-Attention Netwrok"
