@@ -12,7 +12,7 @@ export const Waves = styled.img<Props>`
     width: 100%;
 `;
 export const Wrapper = styled.div`
-    min-height: 100vh;
+    min-height: 110vh;
     width: 100vw;
     display: flex;
     justify-content: center;

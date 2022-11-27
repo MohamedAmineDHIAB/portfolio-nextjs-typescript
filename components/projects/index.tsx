@@ -8,7 +8,7 @@ import { ProjectCoraGNN } from "../../data/projectsData/projectCoraGNN";
 const Projects = () => {
     return (
         <Wrapper>
-            <h3>Projects</h3>
+            <h3 style={{ marginBottom: "1.5rem" }}>Projects</h3>
             <Container>
                 <Project
                     title="Guided Soft-Attention Netwrok"

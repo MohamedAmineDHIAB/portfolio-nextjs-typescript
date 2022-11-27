@@ -9,7 +9,8 @@ const Education = () => {
             <h3
                 style={{
                     color: "var(--purple)",
-                    textShadow: "2px 2px 2px black",
+                    textShadow: "2px 2px 10px black",
+                    marginBottom: "1.5rem",
                 }}
             >
                 Education
