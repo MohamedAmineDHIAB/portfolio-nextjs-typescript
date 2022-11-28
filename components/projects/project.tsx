@@ -114,8 +114,8 @@ const Project = ({ title, link, itemData }: ProjectProps) => {
                 <h3
                     style={{
                         fontSize: "0.5rem",
-                        color: "black",
-                        letterSpacing: "0.02rem",
+                        color: "var(--blue)",
+                        letterSpacing: "0.03rem",
                     }}
                 >
                     {title}

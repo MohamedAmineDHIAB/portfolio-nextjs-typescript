@@ -16,15 +16,15 @@ const Wrapper = styled.div`
     align-items: center;
 `;
 const IconOne = styled.div`
-    width: 40%;
-    height: 40%;
+    width: 35%;
+    height: 35%;
     border-radius: 50%;
     background-color: white;
     border: inherit;
 `;
 const IconTwo = styled.div`
-    width: 40%;
-    height: 40%;
+    width: 35%;
+    height: 35%;
     background-color: white;
     border: inherit;
 `;

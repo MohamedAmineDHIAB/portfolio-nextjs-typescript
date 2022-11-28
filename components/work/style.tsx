@@ -11,10 +11,10 @@ export const Wrapper = styled.div`
     background-size: cover;
     box-sizing: border-box;
     padding: 2rem 0;
+    background: linear-gradient(white 10%, rgba(0, 0, 0, 0.2) 200%);
 `;
 export const Container = styled.div`
     display: flex;
     flex-direction: column;
-    width: 90%;
-    max-width: 20rem;
+    margin-top: 2rem;
 `;

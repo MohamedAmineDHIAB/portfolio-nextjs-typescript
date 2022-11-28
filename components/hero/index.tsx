@@ -6,7 +6,6 @@ import {
     HeroImgWrapper,
     Waves,
 } from "./style";
-import MohamedPic from "../../public/hero/mohamed_pic.jpg";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import Image from "next/image";
@@ -62,7 +61,7 @@ const Hero = () => {
                 >
                     <HeroImgWrapper>
                         <Image
-                            src={MohamedPic}
+                            src="/hero/mohamed_pic.jpg"
                             alt="Mohamed Picture"
                             layout="fill"
                             objectFit="contain"
