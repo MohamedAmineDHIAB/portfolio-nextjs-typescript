@@ -1,6 +1,6 @@
 import styled from "styled-components";
-
-export const PrimaryButton = styled.div`
+import Link from "next/link";
+export const PrimaryButton = styled(Link)`
     display: flex;
     text-align: center;
     align-items: center;

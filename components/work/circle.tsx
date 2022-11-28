@@ -14,6 +14,10 @@ const Wrapper = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 2;
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
 `;
 const IconOne = styled.div`
     width: 35%;
@@ -35,6 +39,7 @@ const IconThree = styled.div`
     background-color: white;
     border: inherit;
 `;
+
 type CircleProps = {
     index: number;
 };

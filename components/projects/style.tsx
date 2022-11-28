@@ -20,4 +20,7 @@ export const Container = styled.div`
     grid-gap: min(5vw, 1rem) min(5vw, 1.5rem);
     margin-top: 1rem;
     margin-bottom: 1rem;
+    @media screen and (max-width: 768px) {
+        grid-template-columns: 1fr;
+    }
 `;

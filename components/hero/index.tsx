@@ -40,7 +40,9 @@ const Hero = () => {
                 <b>
                     I&apos;m a {text} <Cursor cursorColor="inherit" />
                 </b>
-                <PrimaryButton>Let&apos;s chat</PrimaryButton>
+                <PrimaryButton href="mailto: aminedhiab2028@gmail.com">
+                    Let&apos;s chat
+                </PrimaryButton>
             </HeroLeft>
             <HeroRight>
                 {showPing && <RightBorder className="animate-ping" />}

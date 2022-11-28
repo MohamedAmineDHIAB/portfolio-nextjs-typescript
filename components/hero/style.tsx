@@ -20,6 +20,11 @@ export const HeroWrapper = styled.div`
     box-sizing: border-box;
     background: url("./hero/freepik_freepik1.svg") no-repeat;
     background-size: cover;
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+        padding: 25% 5%;
+        height: auto;
+    }
 `;
 
 export const HeroRight = styled.div`
@@ -54,5 +59,9 @@ export const HeroLeft = styled.div`
     max-width: 45vw;
     > * {
         margin-top: 1rem;
+    }
+    @media screen and (max-width: 768px) {
+        max-width: 100%;
+        margin-bottom: 1rem;
     }
 `;

@@ -25,7 +25,7 @@ const Wrapper = styled.div`
 `;
 const Triangle = styled.div`
     position: absolute;
-    top: calc(50% - 0.8rem);
+    top: calc(0% + 1.7rem);
     left: -0.33rem;
     width: 0.6rem;
     height: 0.6rem;
@@ -35,6 +35,9 @@ const Triangle = styled.div`
     border:border: 2px solid rgba(0, 0, 0, 0.9);
     border-right: 1px solid transparent;
     border-top: 1px solid transparent;
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
 `;
 const Title = styled.div`
     position: relative;

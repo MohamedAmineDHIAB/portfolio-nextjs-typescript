@@ -12,6 +12,10 @@ const Wrapper = styled.div`
     position: relative;
     box-sizing: border-box;
     padding: 0 0 1rem 1.2rem;
+    @media screen and (max-width: 768px) {
+        border: none;
+        padding: 0 0 1rem 0;
+    }
 `;
 
 type ItemProps = {

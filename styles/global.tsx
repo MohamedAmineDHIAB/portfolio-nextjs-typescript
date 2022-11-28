@@ -37,6 +37,12 @@ export const GlobalStyle = createGlobalStyle`
         font-size: 0.5rem;
         font-weight: 300;
     }
+    a{
+        font-family: 'Work Sans';
+        font-size: 0.5rem;
+        font-weight: 300;
+        color:var(--blue);
+    }
     span.soft{
         opacity:0.5;
     }

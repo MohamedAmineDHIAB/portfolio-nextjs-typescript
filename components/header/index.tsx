@@ -19,7 +19,9 @@ const Header = () => {
                     <span>Work</span>
                 </NavBarItem>
                 <NavBarItem>
-                    <PrimaryButton>Let&apos;s chat</PrimaryButton>
+                    <PrimaryButton href="mailto: aminedhiab2028@gmail.com">
+                        Let&apos;s chat
+                    </PrimaryButton>
                 </NavBarItem>
             </NavBar>
         </HeaderWrapper>

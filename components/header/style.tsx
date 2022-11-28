@@ -54,6 +54,9 @@ export const NavBarItem = styled.div`
         }
         color: var(--blue);
     }
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
     &:last-child {
         margin-right: 0;
         &:after {
@@ -61,6 +64,9 @@ export const NavBarItem = styled.div`
         }
         &:hover {
             all: unset;
+        }
+        @media screen and (max-width: 768px) {
+            display: flex;
         }
     }
     transition: all 0.2s ease-in-out;
