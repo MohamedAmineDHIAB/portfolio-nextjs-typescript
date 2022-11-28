@@ -34,7 +34,7 @@ export const GlobalStyle = createGlobalStyle`
     }
     span{
         font-family: 'Work Sans';
-        font-size: max(0.5rem, 1.1vw);
+        font-size: 0.5rem;
         font-weight: 300;
     }
     span.soft{

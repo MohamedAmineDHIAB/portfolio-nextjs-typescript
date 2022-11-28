@@ -37,11 +37,11 @@ const Hero = () => {
         <HeroWrapper>
             <Waves src="./hero/waves.svg" />
             <HeroLeft>
-                <h3>Hi, I'm Mohamed 👋</h3>
+                <h3>Hi, I&apos;m Mohamed 👋</h3>
                 <b>
-                    I'm a {text} <Cursor cursorColor="inherit" />
+                    I&apos;m a {text} <Cursor cursorColor="inherit" />
                 </b>
-                <PrimaryButton>Let's chat</PrimaryButton>
+                <PrimaryButton>Let&apos;s chat</PrimaryButton>
             </HeroLeft>
             <HeroRight>
                 {showPing && <RightBorder className="animate-ping" />}

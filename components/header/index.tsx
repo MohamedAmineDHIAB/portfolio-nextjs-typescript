@@ -19,7 +19,7 @@ const Header = () => {
                     <span>Work</span>
                 </NavBarItem>
                 <NavBarItem>
-                    <PrimaryButton>Let's chat</PrimaryButton>
+                    <PrimaryButton>Let&apos;s chat</PrimaryButton>
                 </NavBarItem>
             </NavBar>
         </HeaderWrapper>
