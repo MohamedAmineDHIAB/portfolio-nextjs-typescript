@@ -14,7 +14,7 @@ const Work = () => {
                 <Item index={0} data={firstWorkData} />
                 <Item index={1} data={secondWorkData} />
                 <Item index={2} data={thirdWorkData} />
-                <Item index={2} data={fourthWorkData} />
+                <Item index={3} data={fourthWorkData} />
             </Container>
         </Wrapper>
     );
