@@ -3,8 +3,7 @@ import { SVGProps } from "react";
 const SvgLogoMD = (props: SVGProps<SVGSVGElement>) => (
     <svg
         xmlns="http://www.w3.org/2000/svg"
-        width={436}
-        height={326.667}
+        height="inherit"
         viewBox="0 0 327 245"
         {...props}
     >

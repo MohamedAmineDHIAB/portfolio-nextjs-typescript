@@ -1,12 +1,12 @@
 import { HeaderWrapper, LogoWrapper, NavBar, NavBarItem } from "./style";
-import Logo from "../logo";
 import { PrimaryButton } from "../buttons";
+import Image from "next/image";
 
 const Header = () => {
     return (
         <HeaderWrapper>
             <LogoWrapper>
-                <Logo />
+                <Image src="/main/logo.svg" layout="fill" alt="mohamed_logo" />
             </LogoWrapper>
             <NavBar>
                 <NavBarItem>

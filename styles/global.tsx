@@ -29,7 +29,7 @@ export const GlobalStyle = createGlobalStyle`
     b{
         font-family: 'Caveat Brush';
         font-weight : 900;
-        font-size:max(1.2rem,4vw);
+        font-size:max(0.9rem,4vw);
         color : var(--dark-blue);
     }
     span{

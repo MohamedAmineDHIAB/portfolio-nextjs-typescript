@@ -2,6 +2,7 @@ import styled from "styled-components";
 import Link from "next/link";
 export const PrimaryButton = styled(Link)`
     display: flex;
+    white-space: nowrap;
     text-align: center;
     align-items: center;
     background: linear-gradient(

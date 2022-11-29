@@ -16,7 +16,10 @@ export const HeaderWrapper = styled.div`
 `;
 
 export const LogoWrapper = styled.div`
-    height: 70%;
+    height: 80%;
+    width: max(2rem, 5vw);
+    position: relative;
+    display: flex;
 `;
 
 export const NavBar = styled.div`

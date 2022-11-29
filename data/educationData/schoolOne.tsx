@@ -1,8 +1,8 @@
 export const schoolOneData = {
-    logo: "./education/ecm.svg",
+    logo: "./education/ecm.png",
     name: "École Centrale de Marseille",
     location: "Marseille, France",
-    period:"2018-2022",
+    period: "2018-2022",
     diploma: "Master's Degree in Engineering",
     modules:
         "Maths, Computer Science, Physics, Chemistry, Artficial Intelligence...",

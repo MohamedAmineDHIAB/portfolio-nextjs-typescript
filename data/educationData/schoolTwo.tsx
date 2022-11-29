@@ -1,5 +1,5 @@
 export const schoolTwoData = {
-    logo: "./education/tub.svg",
+    logo: "./education/tub.png",
     name: "Teschniche Universität Berlin",
     location: "Berlin, Germany",
     period: "2018-2022",
