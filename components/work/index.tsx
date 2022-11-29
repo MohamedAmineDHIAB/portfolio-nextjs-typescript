@@ -8,7 +8,7 @@ import { fourthWorkData } from "../../data/workData/fourthWork";
 
 const Work = () => {
     return (
-        <Wrapper>
+        <Wrapper name="work">
             <Title title="Work" />
             <Container>
                 <Item index={0} data={firstWorkData} />

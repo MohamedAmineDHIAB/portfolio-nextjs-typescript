@@ -8,7 +8,7 @@ import Title from "../title";
 
 const Projects = () => {
     return (
-        <Wrapper>
+        <Wrapper name="projects">
             <Title title="Projects" />
             <Container>
                 <Project

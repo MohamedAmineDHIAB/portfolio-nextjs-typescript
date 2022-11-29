@@ -1,5 +1,5 @@
 import styled from "styled-components";
-
+import { Element } from "react-scroll";
 interface Props {
     top: boolean;
 }
@@ -11,7 +11,7 @@ export const Waves = styled.img<Props>`
     left: 0;
     width: 100%;
 `;
-export const Wrapper = styled.div`
+export const Wrapper = styled(Element)`
     min-height: 110vh;
     width: 100vw;
     display: flex;

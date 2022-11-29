@@ -1,5 +1,5 @@
 import styled from "styled-components";
-
+import { Link } from "react-scroll";
 export const HeaderWrapper = styled.div`
     height: max(1.8rem, 4vw);
     width: 100vw;
@@ -29,7 +29,7 @@ export const NavBar = styled.div`
     align-items: center;
 `;
 
-export const NavBarItem = styled.div`
+export const NavBarItem = styled(Link)`
     display: flex;
     height: 1.1rem;
     align-items: center;

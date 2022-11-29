@@ -9,20 +9,20 @@ const Header = () => {
                 <Image src="/main/logo.svg" layout="fill" alt="mohamed_logo" />
             </LogoWrapper>
             <NavBar>
-                <NavBarItem>
+                <NavBarItem to="projects" smooth={true}>
                     <span>Projects</span>
                 </NavBarItem>
-                <NavBarItem>
+                <NavBarItem to="education" smooth={true}>
                     <span>Education</span>
                 </NavBarItem>
-                <NavBarItem>
+                <NavBarItem to="work" smooth={true}>
                     <span>Work</span>
                 </NavBarItem>
-                <NavBarItem>
+                <div>
                     <PrimaryButton href="mailto: aminedhiab2028@gmail.com">
                         Let&apos;s chat
                     </PrimaryButton>
-                </NavBarItem>
+                </div>
             </NavBar>
         </HeaderWrapper>
     );
