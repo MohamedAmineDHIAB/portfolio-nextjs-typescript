@@ -13,9 +13,8 @@ const container = {
         opacity: 1,
         scale: 1,
         transition: {
-            delayChildren: 0.5,
-            staggerChildren: 0.2,
-            duration: 0.1,
+            delayChildren: 0.01,
+            staggerChildren: 0.4,
         },
     },
 };
