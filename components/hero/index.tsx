@@ -48,7 +48,7 @@ const Hero = () => {
                 >
                     <h3>Hi, I&apos;m Mohamed 👋</h3>
                 </motion.div>
-                <motion.div
+                <motion.b
                     initial={{ opacity: 0, y: 50 }}
                     animate={{ y: 0, opacity: 1 }}
                     transition={{
@@ -60,7 +60,7 @@ const Hero = () => {
                     <b>
                         I&apos;m a {text} <Cursor cursorColor="inherit" />
                     </b>
-                </motion.div>
+                </motion.b>
                 <motion.div
                     initial={{ opacity: 0, y: 50 }}
                     animate={{ y: 0, opacity: 1 }}

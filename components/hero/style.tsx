@@ -62,6 +62,9 @@ export const HeroLeft = styled.div`
     }
     @media screen and (max-width: 768px) {
         max-width: 100%;
-        margin-bottom: 1rem;
+        margin-bottom: 2rem;
+        > h3 {
+            margin-top: 0;
+        }
     }
 `;
