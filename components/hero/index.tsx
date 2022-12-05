@@ -36,13 +36,44 @@ const Hero = () => {
         <HeroWrapper>
             <Waves src="./hero/waves.svg" />
             <HeroLeft>
-                <h3>Hi, I&apos;m Mohamed 👋</h3>
-                <b>
-                    I&apos;m a {text} <Cursor cursorColor="inherit" />
-                </b>
-                <PrimaryButton href="mailto: aminedhiab2028@gmail.com">
-                    Let&apos;s chat
-                </PrimaryButton>
+                <motion.div
+                    initial={{ x: -200 }}
+                    animate={{ x: 0 }}
+                    transition={{
+                        type: "spring",
+                        stiffness: 250,
+                        damping: 15,
+                        delay: 0.25,
+                    }}
+                >
+                    <h3>Hi, I&apos;m Mohamed 👋</h3>
+                </motion.div>
+                <motion.div
+                    initial={{ opacity: 0, y: 50 }}
+                    animate={{ y: 0, opacity: 1 }}
+                    transition={{
+                        duration: 1,
+                        delay: 1.2,
+                        ease: "easeInOut",
+                    }}
+                >
+                    <b>
+                        I&apos;m a {text} <Cursor cursorColor="inherit" />
+                    </b>
+                </motion.div>
+                <motion.div
+                    initial={{ opacity: 0, y: 50 }}
+                    animate={{ y: 0, opacity: 1 }}
+                    transition={{
+                        duration: 1,
+                        delay: 2.2,
+                        ease: "easeInOut",
+                    }}
+                >
+                    <PrimaryButton href="mailto: aminedhiab2028@gmail.com">
+                        Let&apos;s chat
+                    </PrimaryButton>
+                </motion.div>
             </HeroLeft>
             <HeroRight>
                 {showPing && <RightBorder className="animate-ping" />}
