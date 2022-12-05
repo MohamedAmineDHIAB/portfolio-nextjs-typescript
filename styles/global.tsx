@@ -48,8 +48,8 @@ export const GlobalStyle = createGlobalStyle`
     }
     span.commit{
         font-family: 'Source Code Pro', monospace;
-        font-size: 0.5rem;
-        font-weight: 400;
+        font-size: 0.75rem;
+        font-weight: 300;
         color:var(--dark-blue);
     }
 `;

@@ -12,7 +12,11 @@ export const Wrapper = styled(Element)`
     background-size: cover;
     box-sizing: border-box;
     padding: 2rem 0;
-    background: linear-gradient(white 10%, rgba(0, 0, 0, 0.2) 200%);
+    background: url("/work/background.webp") no-repeat center center;
+    background-size: contain;
+    @media screen and (max-width: 768px) {
+        background: linear-gradient(white 10%, rgba(0, 0, 0, 0.2) 200%);
+    }
 `;
 export const Container = styled.div`
     display: flex;
