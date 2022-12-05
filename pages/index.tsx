@@ -5,13 +5,8 @@ import Header from "../components/header";
 import Hero from "../components/hero";
 import Projects from "../components/projects";
 import { GlobalStyle, Body } from "../styles/global";
-import dynamic from "next/dynamic";
-import { Suspense } from "react";
 import Footer from "../components/footer";
 
-const DynamicHeader = dynamic(() => import("../components/header"), {
-    suspense: true,
-});
 export default function Home() {
     return (
         <>
