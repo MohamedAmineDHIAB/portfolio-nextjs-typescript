@@ -25,7 +25,7 @@ const item = {
         y: 0,
         opacity: 1,
         transition: {
-            duration: 0.3,
+            duration: 0.8,
         },
     },
 };
@@ -37,6 +37,7 @@ const Projects = () => {
                 variants={container}
                 initial="hidden"
                 whileInView="visible"
+                viewport={{ once: true }}
             >
                 <Container>
                     <motion.li variants={item}>

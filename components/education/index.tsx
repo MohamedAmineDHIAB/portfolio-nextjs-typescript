@@ -41,6 +41,7 @@ const Education = () => {
                     variants={degreeOne}
                     initial="hidden"
                     whileInView="visible"
+                    viewport={{ once: true }}
                 >
                     <Degree data={schoolOneData} />
                 </motion.div>
@@ -48,6 +49,7 @@ const Education = () => {
                     variants={degreeTwo}
                     initial="hidden"
                     whileInView="visible"
+                    viewport={{ once: true }}
                 >
                     <Degree data={schoolTwoData} />
                 </motion.div>

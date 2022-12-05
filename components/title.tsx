@@ -40,6 +40,7 @@ const Title = ({ title }: TitleProps) => {
                 variants={container}
                 initial="hidden"
                 whileInView="visible"
+                viewport={{ once: true }}
             >
                 {title.split("").map((character, index) => {
                     return (

@@ -46,6 +46,12 @@ export const GlobalStyle = createGlobalStyle`
     span.soft{
         opacity:0.5;
     }
+    span.commit{
+        font-family: 'Source Code Pro', monospace;
+        font-size: 0.5rem;
+        font-weight: 400;
+        color:var(--dark-blue);
+    }
 `;
 
 export const Body = styled.div`
