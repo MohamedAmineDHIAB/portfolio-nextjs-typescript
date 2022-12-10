@@ -17,7 +17,7 @@ const Footer = () => {
         <Wrapper>
             <span>
                 &#9400; Mohamed Amine DHIAB 2022. Images source:{" "}
-                <a href="freepik.com"> freepik.com</a>
+                <a href="https://www.freepik.com"> freepik.com</a>
             </span>
         </Wrapper>
     );
