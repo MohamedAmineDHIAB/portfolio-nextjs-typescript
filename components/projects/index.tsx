@@ -6,6 +6,8 @@ import { ProjectImageText } from "../../data/projectsData/projectImageText";
 import { ProjectCoraGNN } from "../../data/projectsData/projectCoraGNN";
 import Title from "../title";
 import { motion } from "framer-motion";
+import { ProjectLislupMain } from "../../data/projectsData/projectLislupMain";
+import { ProjectDashboard } from "../../data/projectsData/projectDashboard";
 
 const container = {
     hidden: { opacity: 1, scale: 0 },
@@ -40,6 +42,22 @@ const Projects = () => {
                 viewport={{ once: true }}
             >
                 <Container>
+                    <motion.li variants={item}>
+                        <Project
+                            title="LISL UP Main Website"
+                            link="https://lislup.com"
+                            itemData={ProjectLislupMain}
+                            buttonText={<>Link to Main Website</>}
+                        />
+                    </motion.li>
+                    <motion.li variants={item}>
+                        <Project
+                            title="LISL UP Dashboard"
+                            link="https://photos.app.goo.gl/wBYtLnm11bgLeoWa6"
+                            itemData={ProjectDashboard}
+                            buttonText={<>Link to Demo</>}
+                        />
+                    </motion.li>
                     <motion.li variants={item}>
                         <Project
                             title="Guided Soft-Attention Netwrok"

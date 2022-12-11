@@ -1,9 +1,9 @@
 import styled from "styled-components";
-import { IoLogoGithub } from "react-icons/io";
-import { FiExternalLink } from "react-icons/fi";
 
 import ImageList from "@mui/material/ImageList";
 import ImageListItem from "@mui/material/ImageListItem";
+import { IoLogoGithub } from "react-icons/io";
+import { FiExternalLink } from "react-icons/fi";
 const Wrapper = styled.div`
     width: 8rem;
     height: 10rem;
@@ -67,6 +67,7 @@ type ProjectProps = {
         cols?: number;
         rows?: number;
     }[];
+    buttonText?: JSX.Element;
 };
 
 function srcset(image: string, size: number, rows = 1, cols = 1) {
@@ -75,7 +76,7 @@ function srcset(image: string, size: number, rows = 1, cols = 1) {
         srcSet: `${image}?w=${size * cols}&h=${size * rows}`,
     };
 }
-const Project = ({ title, link, itemData }: ProjectProps) => {
+const Project = ({ title, link, itemData, buttonText }: ProjectProps) => {
     return (
         <Wrapper>
             {/* <b style={{ fontSize: "1rem" }}>{title}</b>
@@ -121,9 +122,15 @@ const Project = ({ title, link, itemData }: ProjectProps) => {
                     {title}
                 </h3>
             </Title>
-            <Button href={link}>
-                Link to GitHub
-                <IoLogoGithub style={{ fontSize: "inherit" }} />
+            <Button href={link} target="_blank">
+                {!buttonText ? (
+                    <>
+                        Link to GitHub
+                        <IoLogoGithub style={{ fontSize: "inherit" }} />
+                    </>
+                ) : (
+                    buttonText
+                )}
                 <FiExternalLink style={{ fontSize: "inherit" }} />
             </Button>
         </Wrapper>
