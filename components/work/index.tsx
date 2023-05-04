@@ -7,6 +7,7 @@ import { thirdWorkData } from "../../data/workData/thirdWork";
 import { fourthWorkData } from "../../data/workData/fourthWork";
 import { motion } from "framer-motion";
 import styled from "styled-components";
+import { zeroWorkData } from "../../data/workData/zeroWork";
 
 const container = {
     hidden: { opacity: 1, scale: 0 },
@@ -42,16 +43,19 @@ const Work = () => {
             >
                 <Container>
                     <motion.div variants={item}>
-                        <Item index={0} data={firstWorkData} />
+                        <Item index={0} data={zeroWorkData} />
                     </motion.div>
                     <motion.div variants={item}>
-                        <Item index={1} data={secondWorkData} />
+                        <Item index={1} data={firstWorkData} />
                     </motion.div>
                     <motion.div variants={item}>
-                        <Item index={2} data={thirdWorkData} />
+                        <Item index={2} data={secondWorkData} />
                     </motion.div>
                     <motion.div variants={item}>
-                        <Item index={3} data={fourthWorkData} />
+                        <Item index={3} data={thirdWorkData} />
+                    </motion.div>
+                    <motion.div variants={item}>
+                        <Item index={4} data={fourthWorkData} />
                     </motion.div>
                     <motion.div variants={item}>
                         <span className="commit">Initial commit 🎉</span>

@@ -1,16 +1,17 @@
 export const secondWorkData = {
-    title: "Technical Manager",
-    logo: "./work/lislup.svg",
-    period: "03/2022 - present",
+    title: "Research Scientist",
+    logo: "./work/empaia.png",
+    period: "10/2022 - 03/2023",
     stack: [
-        "react.png",
-        "react_native.png",
-        "node.png",
-        "mongo.png",
+        "python.png",
+        "docker.png",
+        "pytorch.jpeg",
+        "jupyter.png",
         "nextjs.png",
-        "express.png",
         "gitlab.png",
         "ubuntu.png",
+        "huggingface.png",
     ],
-    type: "Part-time",
+    type: "Full-Time",
 };
+
